@@ -449,16 +449,68 @@
     </div><!-- /.blocks -->
   </main>
 
-  <!-- ============ 푸터 ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-brand">🐰 강남 가라오케 달토 <span>· 하이퍼블릭</span></p>
-      <p>서울특별시 강남구 역삼동 604-11번지 삼정호텔 달리는토끼 지하1층·2층</p>
-      <p>예약 &amp; 문의 : <a href="tel:010-3460-8953">☎ 010-3460-8953</a> (24시 연중무휴)</p>
-      <nav class="footer-links">
-        <a href="#about">달토 소개</a> · <a href="#guide">이용 가이드</a> · <a href="#faq">FAQ</a> · <a href="#trust">운영 정보</a> · <a href="#location">오시는 길</a>
+  <!-- ============ 푸터 (구글 권장: NAP 일관성 · 사이트맵 · 신뢰/정책 · 공식 채널) ============ -->
+  <footer class="site-footer" itemscope itemtype="https://schema.org/NightClub">
+    <div class="container footer-grid">
+
+      <!-- 브랜드 + 소개 + 공식 채널(sameAs) -->
+      <div class="footer-col footer-brand-col">
+        <p class="footer-brand" itemprop="name">🐰 강남 가라오케 달토</p>
+        <p class="footer-tag">삼정호텔 기반 하이퍼블릭 프리미엄 엔터테인먼트</p>
+        <p class="footer-desc" itemprop="description">강남 역삼동 삼정호텔 B1F·2F에서 운영하는 하이퍼블릭 공간. 현장 운영팀이 직접 안내·예약을 관리합니다.</p>
+        <div class="footer-social" aria-label="공식 채널 및 지도">
+          <a href="https://map.naver.com/v5/search/서울%20강남구%20역삼동%20604-11%20삼정호텔" target="_blank" rel="noopener" itemprop="hasMap">🗺️ 네이버 지도</a>
+          <a href="https://map.kakao.com/?q=서울%20강남구%20역삼동%20604-11%20삼정호텔" target="_blank" rel="noopener">📍 카카오맵</a>
+          <a href="tel:010-3460-8953">📞 전화 예약</a>
+        </div>
+      </div>
+
+      <!-- 사이트맵 -->
+      <nav class="footer-col" aria-label="사이트맵">
+        <h3 class="footer-h">바로가기</h3>
+        <ul class="footer-nav">
+          <li><a href="#about">달토 소개</a></li>
+          <li><a href="#hyperpublic">하이퍼블릭이란?</a></li>
+          <li><a href="#space">공간 &amp; 시설</a></li>
+          <li><a href="#price">메뉴 &amp; 가격</a></li>
+          <li><a href="#guide">이용 가이드</a></li>
+          <li><a href="#reservation">예약 방법</a></li>
+        </ul>
       </nav>
-      <p class="footer-copy">© <span id="year"></span> 강남 가라오케 달토. All rights reserved.</p>
+
+      <!-- 안내 / 신뢰 -->
+      <nav class="footer-col" aria-label="안내 및 정책">
+        <h3 class="footer-h">안내 &amp; 정책</h3>
+        <ul class="footer-nav">
+          <li><a href="#faq">자주 묻는 질문</a></li>
+          <li><a href="#community">고객 후기</a></li>
+          <li><a href="#trust">운영 정보</a></li>
+          <li><a href="#trust">편집 · 운영 정책</a></li>
+          <li><a href="#location">오시는 길</a></li>
+          <li><a href="sitemap.xml">사이트맵 (XML)</a></li>
+        </ul>
+      </nav>
+
+      <!-- 연락처 / NAP / 영업시간 -->
+      <div class="footer-col footer-contact" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <h3 class="footer-h">오시는 길 &amp; 예약</h3>
+        <address class="footer-address">
+          <span class="footer-line">📍 <span itemprop="addressRegion">서울특별시</span> <span itemprop="addressLocality">강남구</span> <span itemprop="streetAddress">역삼동 604-11 삼정호텔 달리는토끼 B1F·2F</span></span>
+          <span class="footer-line">🚶 역삼역 4번 출구 도보 5분 · 🅿️ 발렛 · 주차 가능</span>
+          <span class="footer-line">🕛 영업시간 : <strong>24시 연중무휴</strong></span>
+          <a class="footer-phone" href="tel:010-3460-8953">☎ 010-3460-8953</a>
+        </address>
+        <a href="tel:010-3460-8953" class="btn btn-primary footer-cta">지금 전화 예약하기</a>
+      </div>
+    </div>
+
+    <!-- 하단 바 -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">© <span id="year"></span> 강남 가라오케 달토 (DALTO). All rights reserved.</p>
+        <p class="footer-meta">상호: 강남 가라오케 달토 · 운영: 달토 운영팀 · 문의 ☎ 010-3460-8953 · 본 안내는 현장 운영팀이 작성·검수합니다.</p>
+        <a href="#home" class="footer-top" aria-label="맨 위로">↑ 맨 위로</a>
+      </div>
     </div>
   </footer>
 
