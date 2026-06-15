@@ -338,6 +338,8 @@ a { color: inherit; text-decoration: none; }
   display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
   gap: 6px 18px; padding: 22px 20px 34px; text-align: center; position: relative;
 }
+.footer-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; width: 100%; margin-bottom: 8px; }
+.footer-legal a { font-size: 0.82rem; font-weight: 700; color: var(--gold-deep); }
 .footer-copy { font-size: 0.8rem; font-weight: 700; color: var(--ink); width: 100%; }
 .footer-meta { font-size: 0.76rem; opacity: 0.8; width: 100%; }
 .footer-top {
