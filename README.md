@@ -12,11 +12,27 @@
 ## 파일 구성
 | 파일 | 설명 |
 | :--- | :--- |
-| `index.html` | 메인 페이지 (내비게이션 + 본문 블록 + 구조화 데이터) |
-| `styles.css` | 소프트 카드 UI, 크림 테마, 반응형 |
+| `index.html` | 메인 페이지 (내비게이션 + 본문 블록 + 지역 안내 허브 + 구조화 데이터) |
+| `region/*.html` | 지역별 롱테일 랜딩 페이지 (역삼동·강남역·선릉·삼성동·논현동·청담동) |
+| `styles.css` | 소프트 카드 UI, 크림 테마, 반응형, 지역 카드·평점·브레드크럼 |
 | `script.js` | 모바일 메뉴 토글, 연도 자동 갱신 (경량 — INP/CWV 고려) |
 | `assets/og-image.svg` | 선호 썸네일 (og:image + schema image) |
-| `robots.txt` / `sitemap.xml` | 검색엔진 SEO |
+| `robots.txt` / `sitemap.xml` | 검색엔진 SEO (지역 페이지 포함) |
+
+## 지역 페이지 (내부링크 · 롱테일 SEO)
+메인 페이지의 **지역별 안내** 섹션(`#regions`)·내비게이션·푸터에서 각 지역 페이지로 내부링크하고,
+지역 페이지끼리도 하단 "관련 지역"으로 교차링크합니다.
+
+| 지역 페이지 | 타깃 롱테일 키워드 |
+| :--- | :--- |
+| `region/yeoksam.html` | 역삼동 가라오케 (달토 소재지) |
+| `region/gangnam-station.html` | 강남역 가라오케 |
+| `region/seolleung.html` | 선릉 가라오케 |
+| `region/samseong.html` | 삼성동·코엑스 가라오케 |
+| `region/nonhyeon.html` | 논현동 가라오케 |
+| `region/cheongdam.html` | 청담 가라오케 |
+
+각 지역 페이지는 `NightClub`(평점·리뷰 포함)·`BreadcrumbList`·`WebPage`·`FAQPage` 스키마를 갖습니다.
 
 ## 메인페이지 섹션
 홈 → 달토 소개(Who/How/Why) → 하이퍼블릭이란 → 일반 vs 하이퍼블릭 비교표 →
@@ -27,8 +43,9 @@
 - **E-E-A-T**: 작성자 바이라인, 운영자/업체 정보, 편집·운영 정책, 연락처 공개
 - **정보 이득(1차 경험)**: 비교표, 현장 매니저 기반 단계별 이용 가이드, 요금 구조 설명
 - **Who/How/Why**: 달토 소개 섹션에 명시
-- **구조화 데이터**: `NightClub`(geo·영업시간), `BreadcrumbList`, `Article`(저자 명시),
-  `FAQPage`, `DiscussionForumPosting`(2026.3 신규 지원)
+- **구조화 데이터**: `NightClub`(geo·영업시간·**AggregateRating·Review/평점·후기**), `BreadcrumbList`,
+  `Article`(저자 명시), `FAQPage`, `DiscussionForumPosting`(2026.3 신규 지원), `WebSite`,
+  `ItemList`(지역 안내 허브). 지역 페이지에도 평점·리뷰 스키마를 동일 적용
 - **선호 이미지**: `og:image` + schema `image` 동시 지정
 - **페이지 경험**: 경량 JS, 모바일 반응형, HTTPS 전제(canonical https)
 

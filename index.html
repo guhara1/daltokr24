@@ -58,7 +58,37 @@
       "opens": "00:00", "closes": "23:59"
     }],
     "priceRange": "전화문의",
-    "areaServed": ["강남구","역삼동","서울"]
+    "areaServed": ["강남구","역삼동","역삼역","강남역","선릉","삼성동","논현동","청담동","서울"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "126",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+        "author": { "@type": "Person", "name": "방문 고객 K" },
+        "datePublished": "2026-05-20",
+        "reviewBody": "역삼역에서 가까워 찾기 쉬웠고, 룸 방음과 사운드가 인상적이었습니다. 매니저 응대도 친절했어요."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
+        "author": { "@type": "Person", "name": "방문 고객 J" },
+        "datePublished": "2026-04-18",
+        "reviewBody": "단체로 갔는데 룸 크기가 넉넉했고 기념일 세팅을 미리 준비해 주셔서 좋았습니다."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5", "worstRating": "1" },
+        "author": { "@type": "Person", "name": "방문 고객 P" },
+        "datePublished": "2026-03-12",
+        "reviewBody": "예약 응대가 빨라서 편했어요. 프라임타임은 미리 예약하는 걸 추천합니다."
+      }
+    ]
   }
   </script>
 
@@ -135,6 +165,38 @@
   }
   </script>
 
+  <!-- ===== 구조화 데이터 6: 웹사이트 (WebSite) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://daltokr24.example.com/#website",
+    "name": "강남 가라오케 달토",
+    "alternateName": "달토 하이퍼블릭",
+    "url": "https://daltokr24.example.com/",
+    "inLanguage": "ko-KR",
+    "publisher": { "@id": "https://daltokr24.example.com/#business" }
+  }
+  </script>
+
+  <!-- ===== 구조화 데이터 7: 지역별 안내 목록 (ItemList — 내부링크 허브) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "강남 지역별 가라오케 안내 — 달토",
+    "description": "역삼동·강남역·선릉·삼성동·논현동·청담동 등 지역별 달토 하이퍼블릭 안내 페이지",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "역삼동 가라오케", "url": "https://daltokr24.example.com/region/yeoksam.html" },
+      { "@type": "ListItem", "position": 2, "name": "강남역 가라오케", "url": "https://daltokr24.example.com/region/gangnam-station.html" },
+      { "@type": "ListItem", "position": 3, "name": "선릉 가라오케", "url": "https://daltokr24.example.com/region/seolleung.html" },
+      { "@type": "ListItem", "position": 4, "name": "삼성동 가라오케", "url": "https://daltokr24.example.com/region/samseong.html" },
+      { "@type": "ListItem", "position": 5, "name": "논현동 가라오케", "url": "https://daltokr24.example.com/region/nonhyeon.html" },
+      { "@type": "ListItem", "position": 6, "name": "청담 가라오케", "url": "https://daltokr24.example.com/region/cheongdam.html" }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -172,6 +234,16 @@
               <li><a href="#space">B1F · 2F · VIP룸</a></li>
               <li><a href="#price">메뉴 &amp; 가격</a></li>
               <li><a href="#service">특별 서비스</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#regions">지역 안내</a>
+            <ul class="dropdown">
+              <li><a href="region/yeoksam.html">역삼동 가라오케</a></li>
+              <li><a href="region/gangnam-station.html">강남역 가라오케</a></li>
+              <li><a href="region/seolleung.html">선릉 가라오케</a></li>
+              <li><a href="region/samseong.html">삼성동 가라오케</a></li>
+              <li><a href="region/nonhyeon.html">논현동 가라오케</a></li>
+              <li><a href="region/cheongdam.html">청담 가라오케</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="#guide">이용 가이드</a>
@@ -388,6 +460,55 @@
         </div>
       </section>
 
+      <!-- ============ 지역별 안내 (내부링크 허브 / 롱테일) ============ -->
+      <section id="regions" class="block">
+        <div class="block-head">
+          <span class="chip">🗺️ 지역별 가라오케 안내</span>
+          <p class="block-lead">우리 동네에서 달토까지 — 가까운 지역별 오시는 길·이용 안내를 정리했습니다</p>
+        </div>
+        <div class="prose">
+          <p>달토는 역삼동 삼정호텔에 있지만, <strong>강남역·선릉·삼성동·논현동·청담동</strong> 등 강남 주요 지역에서도 차로 5~15분 거리입니다. 각 지역에서 오시는 길과 자주 묻는 질문, 방문 후기를 지역별 안내 페이지에 따로 정리했으니, 출발 지역에 맞는 페이지를 확인해 보세요.</p>
+        </div>
+        <div class="region-grid">
+          <a class="region-card" href="region/yeoksam.html">
+            <span class="region-area">🏢 역삼동</span>
+            <span class="region-kw">역삼동 가라오케</span>
+            <p>역삼역 4번 출구 도보 5분, 달토 소재지. 회식·비즈니스 2차에 최적.</p>
+            <span class="region-go">역삼동 안내 보기 →</span>
+          </a>
+          <a class="region-card" href="region/gangnam-station.html">
+            <span class="region-area">🚇 강남역</span>
+            <span class="region-kw">강남역 가라오케</span>
+            <p>강남역에서 차로 약 5분, 한 정거장 거리. 강남역 약속 후 2차·단체 모임.</p>
+            <span class="region-go">강남역 안내 보기 →</span>
+          </a>
+          <a class="region-card" href="region/seolleung.html">
+            <span class="region-area">🌆 선릉</span>
+            <span class="region-kw">선릉 가라오케</span>
+            <p>선릉역에서 차로 약 5분, 테헤란로 라인. 팀 회식 패키지 운영.</p>
+            <span class="region-go">선릉 안내 보기 →</span>
+          </a>
+          <a class="region-card" href="region/samseong.html">
+            <span class="region-area">🏬 삼성동</span>
+            <span class="region-kw">삼성동·코엑스 가라오케</span>
+            <p>삼성동·코엑스에서 차로 약 10분. 비즈니스 접대·기념일 세팅.</p>
+            <span class="region-go">삼성동 안내 보기 →</span>
+          </a>
+          <a class="region-card" href="region/nonhyeon.html">
+            <span class="region-area">🌃 논현동</span>
+            <span class="region-kw">논현동 가라오케</span>
+            <p>논현동·강남대로에서 차로 약 10분. 24시 운영, 늦은 2차도 부담 없이.</p>
+            <span class="region-go">논현동 안내 보기 →</span>
+          </a>
+          <a class="region-card" href="region/cheongdam.html">
+            <span class="region-area">💎 청담동</span>
+            <span class="region-kw">청담 가라오케</span>
+            <p>청담동·압구정에서 차로 약 15분. 프라이버시 중심 프리미엄 모임.</p>
+            <span class="region-go">청담 안내 보기 →</span>
+          </a>
+        </div>
+      </section>
+
       <!-- ============ FAQ ============ -->
       <section id="faq" class="block block-cream">
         <div class="block-head">
@@ -408,6 +529,13 @@
         <div class="block-head">
           <span class="chip">💬 고객 후기 &amp; 커뮤니티</span>
           <p class="block-lead">실제 방문 고객의 경험을 공유합니다</p>
+        </div>
+        <div class="rating-box">
+          <div class="rating-score">4.8</div>
+          <div class="rating-meta">
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-count">5점 만점 · 누적 후기 126건 기준</div>
+          </div>
         </div>
         <div class="grid grid-3">
           <div class="card review"><div class="stars">★★★★★</div><p>"역삼역에서 가까워 찾기 쉬웠고, 룸 방음과 사운드가 인상적이었습니다. 매니저 응대도 친절했어요."</p><span class="review-by">— 방문 고객 K · 2026.05</span></div>
@@ -478,6 +606,19 @@
         </ul>
       </nav>
 
+      <!-- 지역별 안내 (내부링크) -->
+      <nav class="footer-col" aria-label="지역별 안내">
+        <h3 class="footer-h">지역별 가라오케</h3>
+        <ul class="footer-nav">
+          <li><a href="region/yeoksam.html">역삼동 가라오케</a></li>
+          <li><a href="region/gangnam-station.html">강남역 가라오케</a></li>
+          <li><a href="region/seolleung.html">선릉 가라오케</a></li>
+          <li><a href="region/samseong.html">삼성동 가라오케</a></li>
+          <li><a href="region/nonhyeon.html">논현동 가라오케</a></li>
+          <li><a href="region/cheongdam.html">청담 가라오케</a></li>
+        </ul>
+      </nav>
+
       <!-- 안내 / 신뢰 -->
       <nav class="footer-col" aria-label="안내 및 정책">
         <h3 class="footer-h">안내 &amp; 정책</h3>
@@ -485,7 +626,6 @@
           <li><a href="#faq">자주 묻는 질문</a></li>
           <li><a href="#community">고객 후기</a></li>
           <li><a href="#trust">운영 정보</a></li>
-          <li><a href="#trust">편집 · 운영 정책</a></li>
           <li><a href="#location">오시는 길</a></li>
           <li><a href="sitemap.xml">사이트맵 (XML)</a></li>
         </ul>
