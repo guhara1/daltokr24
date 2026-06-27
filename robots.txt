@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://daltokr24.example.com/sitemap.xml
+Sitemap: https://daltokr24.com/sitemap.xml
