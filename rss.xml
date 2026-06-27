@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>강남 가라오케 달토 | 런닝래빗</title>
+    <link>https://daltokr24.com/</link>
+    <atom:link href="https://daltokr24.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>강남 역삼동 삼정호텔 기반 하이퍼블릭 달토 — 지역별 안내·후기·예약 소식</description>
+    <language>ko</language>
+    <lastBuildDate>Sat, 27 Jun 2026 09:00:00 +0900</lastBuildDate>
+    <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    <ttl>60</ttl>
+    <item>
+      <title>강남 가라오케 달토 | 런닝래빗 24시 연중무휴</title>
+      <link>https://daltokr24.com/</link>
+      <guid isPermaLink="true">https://daltokr24.com/</guid>
+      <description>강남 역삼동 삼정호텔 기반 하이퍼블릭 달토. 24시 연중무휴 · 예약 010-3431-0531</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>역삼동 가라오케 달토</title>
+      <link>https://daltokr24.com/region/yeoksam.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/yeoksam.html</guid>
+      <description>역삼역 4번 출구 도보 5분, 달토 소재지. 역삼동 하이퍼블릭 안내·후기·예약</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>강남역 가라오케 달토</title>
+      <link>https://daltokr24.com/region/gangnam-station.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/gangnam-station.html</guid>
+      <description>강남역에서 차로 약 5분. 강남역 하이퍼블릭 2차·단체 모임 안내</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>선릉 가라오케 달토</title>
+      <link>https://daltokr24.com/region/seolleung.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/seolleung.html</guid>
+      <description>선릉역 차로 약 5분, 테헤란로 라인. 선릉 하이퍼블릭 팀 회식 안내</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>삼성동·코엑스 가라오케 달토</title>
+      <link>https://daltokr24.com/region/samseong.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/samseong.html</guid>
+      <description>삼성동·코엑스에서 차로 약 10분. 삼성동 하이퍼블릭 접대 안내</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>논현동 가라오케 달토</title>
+      <link>https://daltokr24.com/region/nonhyeon.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/nonhyeon.html</guid>
+      <description>논현동·강남대로 차로 약 10분. 24시 운영 논현동 하이퍼블릭 안내</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>청담 가라오케 달토</title>
+      <link>https://daltokr24.com/region/cheongdam.html</link>
+      <guid isPermaLink="true">https://daltokr24.com/region/cheongdam.html</guid>
+      <description>청담동·압구정에서 차로 약 15분. 청담 프리미엄 하이퍼블릭 안내</description>
+      <pubDate>Sat, 27 Jun 2026 09:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
